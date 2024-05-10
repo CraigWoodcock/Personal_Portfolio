@@ -1,0 +1,176 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #002f68;
+    box-sizing: border-box;
+    
+}
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    background-color:#305892 ;
+    z-index: 5;
+}
+nav{
+    height: 100%;
+
+}
+
+.navigationList {
+    display: flex;
+    height: 100%;
+    gap: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+
+nav> ul * {
+    color:#002f68 ;
+    background-color: aliceblue;
+    text-align: center;
+}
+
+.titles{
+    text-align: center;
+    margin: 50px auto 60px;
+    color: antiquewhite;
+}
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    margin: 0;
+    bottom: 0px;
+    width: 100%;
+    height: 40px;  
+    background-color:#305892; 
+    color: antiquewhite;
+}
+    footer > a{
+        color: antiquewhite;
+        /* color: white; */
+        
+    }
+
+/* index.html */
+
+
+
+.hero{
+    display: flex;
+    align-items: center;
+    width: 75vw;
+    min-height: 50vh;
+    background-color: antiquewhite;
+    margin: 20px auto 40px ;
+    
+    
+   
+   
+}
+
+.container{
+    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+    
+    
+    
+}
+.hero_text > p{
+    margin-top: 20px;
+    
+}
+img{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+   
+}
+
+@media(max-width: 782px){
+    .container{
+        flex-direction: column;
+        text-align: center;
+        }
+        img{
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+           
+        }
+      
+    
+}
+
+
+/* about.html */
+section {
+    margin: 10px auto;
+    width: 90vw;
+    min-height: 200px;  
+    padding: 5px;
+}
+
+section:last-of-type {
+    margin-bottom: 50px;
+}
+
+.overview > p{
+    margin: 5px;
+    padding: 2px;
+}
+.work_list{
+    margin-left: 20px;
+}
+.work > ul li {
+    margin-top: 20px;
+}
+.one{
+    background-color: antiquewhite;
+}
+/* .one>* {
+    /* margin: 5px;
+} */
+
+.two{
+    background-color: aliceblue;
+}
+
+
+/* Contact Me Page!! */
+.contact_List{
+    width: 75vw;
+    margin: 40px auto;
+}
+.contact_List *{
+    border: 1px solid red;
+    
+    
+}
+.contact_List p{
+    display: inline-block;
+    width: 90%;
+}
+
+.contact_List li{
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
